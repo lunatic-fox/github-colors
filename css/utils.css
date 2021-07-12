@@ -1,0 +1,17 @@
+.invisible {
+    opacity: 0%;
+}
+.gone {
+    display: none;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexblock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

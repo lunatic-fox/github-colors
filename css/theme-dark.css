@@ -1,0 +1,12 @@
+:root {
+    --a-link: #2389ff;
+    --a-hover: #44f3ff;
+    --body-bg: #0e0e0e;
+    --body-color: #bebebe;
+    --header-bg: #30133d;
+    --options-bar-bg: #1d0925;
+    --options-bar-color: #774191;
+    --star-btn-stroke: #14fff1;
+    --tag-description-color: #999999;
+    --arrows-btn: #e2a4ff;
+}
