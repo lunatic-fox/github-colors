@@ -173,3 +173,17 @@ footer {
     font-weight: 700;
     text-align: center;
 }
+
+.after-click, .before-click {
+    padding: 5px 8px;
+    border-radius: 4px;
+    margin: 2px;
+    flex-grow: 1;
+    font-size: 20px;
+    cursor: pointer;
+    flex-basis: auto;
+}
+
+.after-click {
+    flex-basis: 100%;
+}

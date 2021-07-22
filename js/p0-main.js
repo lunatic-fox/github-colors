@@ -3,8 +3,8 @@
  * @copyright Josélio de S. C. Júnior 2021
  */
 `use strict`
-import {githubColors, Layout} from '../../../js/Classes.js';
-import {Color} from '../../../js/Color.js';
+import { githubColors, Layout } from '../../../js/Classes.js';
+import { Color } from '../../../js/Color.js';
 
 const translation = {
     translate() {
@@ -74,21 +74,15 @@ class main {
         for (let i = 0; i < arr.length; i++) {
             const node = document.createElement('span');
     
-            node.innerHTML = `${arr[i][0]}<br>`
+            node.innerHTML = `${arr[i][0]}<br>`;
             node.id = `pc${i}`;
-            node.style.background = arr[i][1];
-            node.style.padding = '5px 8px';
-            node.style.borderRadius = '4px';
-            node.style.border = `solid 1px ${Color.parseColor(arr[i][1], 'hex', 'rgb', null, null, 0.2)}`;
-            node.style.margin = '2px';
-            node.style.flexGrow = '1';
-            node.style.fontSize = '20px';
-            node.style.color = textColor(arr[i][1]);
-            node.style.cursor = 'pointer';
+            node.className = 'before-click';
+            node.style.cssText = `background: ${arr[i][1]};
+            border: solid 1px ${Color.parseColor(arr[i][1], 'hex', 'rgb', null, null, 0.2)};
+            color: ${textColor(arr[i][1])};`;
             document.getElementById(ids.CONTENT).appendChild(node);
     
-    
-            const hexColor = document.createElement('span');
+            const hexColor = document.createElement('div');
             hexColor.id = `hex${i}`;
             hexColor.style.fontSize = '14px';
     
@@ -102,13 +96,16 @@ class main {
             pcolor.addEventListener('click', ()=> {
 
                 if (status) {
-                    pcolor.style.flexBasis = '100%';
-                    hex.innerHTML = `${arr[i][1]}`.toUpperCase() +
-                    `<br>${Color.parseHEX(arr[i][1], 'rgba')}`.replace(/,/g, ', ') +
-                    `<br>${Color.parseHEX(arr[i][1], 'hsla')}`.replace(/,/g, ', ');
+                    pcolor.className = 'after-click';
+                    hex.innerHTML = `${arr[i][1].toUpperCase()}
+                    <br>
+                    ${Color.parseHEX(arr[i][1], 'rgba').replace(/,/g, ', ')}
+                    <br>
+                    ${Color.parseHEX(arr[i][1], 'hsla').replace(/,/g, ', ')}`;
+
                     status = false;
                 } else {
-                    pcolor.style.flexBasis = 'auto';
+                    pcolor.className = 'before-click';
                     hex.innerHTML = '';
                     status = true;
                 };
