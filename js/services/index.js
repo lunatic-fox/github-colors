@@ -1,3 +1,3 @@
 export * from './Kolorz-extended.js';
-export * from './githubColors.js';
+export * from './GithubColors.js';
 export * from './Translation.js';
