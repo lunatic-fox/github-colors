@@ -1,2 +1,2 @@
-export * from './languageColorNode.js';
+export * from './LanguageColorNode.js';
 export * from './InnerColorNode.js';
