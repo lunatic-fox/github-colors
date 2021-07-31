@@ -3,9 +3,7 @@
  * @copyright Josélio de S. C. Júnior 2021
  */
 `use strict`
-//import { Layout } from 'https://joseliojunior.github.io/js/Classes.js';
 import { Layout } from '../../../js/Classes.js';
-
 import constants from "./constants.js";
 import { languageColorNode, innerColorNode } from './nodes/index.js'
 import { Kolorz, githubColors, translation } from "./services/index.js";
