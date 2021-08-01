@@ -10,7 +10,7 @@
 async function githubLanguages() {
     const data = await fetch(`https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml`);  
 
-    if (data.status < 200 || data.status > 226)
+    if (!data.ok)
         return !1;
 
     const response = await data.text();
