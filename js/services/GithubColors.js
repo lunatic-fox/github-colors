@@ -15,20 +15,17 @@ async function githubLanguages() {
 
     const response = await data.text();
 
-    const t = `${response
-        .replace(/^(\#.*|---|\s{2}(?!color).*)/gm, '')
-        .replace(/color:/gm, '')
-        .replace(/:\s+"#/gm, `","#`)
-        .replace(/.*:/gm, '')
-        .replace(/\"\s+/gm, `","`)
-        .replace(/","$/, '')
+    const arrt = `${response
+        .replace(/^(#.*|---|\s{2}(?!color).*)/gm, '')
+        .replace(/color|[:"]/gm, '')
+        .replace(/^\n/gm, '')
+        .replace(/\n\s{2}/gm, ',')
         }`
-        .split(',')
-        .map(x => x.replace(/\n|"/g, ''));
+        .split('\n')
+        .map(e => e.split(',').map(e => e.trim()))
+        .filter(e => e.length > 1);
 
-    const arr = [];
-    for (let i = 0; i < t.length; i++) arr.push([t[i], t[i + 1]]), i++;
-    return arr;
+    return arrt;
 }
 
 export const githubColors = await githubLanguages();
