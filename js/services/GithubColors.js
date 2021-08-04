@@ -15,17 +15,17 @@ async function githubLanguages() {
 
     const response = await data.text();
 
-    const arrt = `${response
+    const art = `${response
         .replace(/^(#.*|---|\s{2}(?!color).*)/gm, '')
         .replace(/color|[:"]/gm, '')
         .replace(/^\n/gm, '')
         .replace(/\n\s{2}/gm, ',')
         }`
-        .split('\n')
-        .map(e => e.split(',').map(e => e.trim()))
-        .filter(e => e.length > 1);
+            .split('\n')
+            .map(e => e.split(',').map(e => e.trim()))
+            .filter(e => e.length > 1);
 
-    return arrt;
+    return art;
 }
 
 export const githubColors = await githubLanguages();
