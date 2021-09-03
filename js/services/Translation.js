@@ -18,19 +18,19 @@ export const translation = {
         }
     },
     en: {
-        title: `Github known programming and markup language colors`,
+        title: `Colors of all languages known to GitHub`,
         description: `
-        Original Github's data file: <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml">LINK</a>
-            <br>MIT License: <a href="https://github.com/github/linguist/blob/master/LICENSE">LINK</a>
+        Original Github's data file: <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank">LINK</a>
+            <br>MIT License: <a href="https://github.com/github/linguist/blob/master/LICENSE" target="_blank">LINK</a>
             <div style="margin-top: 15px;">
                 Languages total number: <span id="lang-number"></span>
             </div>`
     },
     pt_br: {
-        title: `Cores das linguagens de programação e marcação conhecidas pelo Github`,
+        title: `Cores de todas as linguagens conhecidas pelo Github`,
         description: `
-        Arquivo de dados original do Github: <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml">LINK</a>
-            <br>Licença MIT: <a href="https://github.com/github/linguist/blob/master/LICENSE">LINK</a>
+        Arquivo de dados original do Github: <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank">LINK</a>
+            <br>Licença MIT: <a href="https://github.com/github/linguist/blob/master/LICENSE" target="_blank">LINK</a>
             <div style="margin-top: 15px;">
                 Número total de linguagens: <span id="lang-number"></span>
             </div>`
