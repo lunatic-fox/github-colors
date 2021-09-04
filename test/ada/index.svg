@@ -3,7 +3,7 @@
     <style>
         @font-face {
             font-family: 'Ubuntu Mono';
-            src: url(fonts/UbuntuMono-Regular.ttf);
+            src: url(https://joseliojunior.github.io/github-colors/test/fonts/UbuntuMono-Regular.ttf);
         }
     </style>
     <rect
