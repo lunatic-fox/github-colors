@@ -1,4 +1,8 @@
-# [joseliojunior.github.io/github-colors/](https://joseliojunior.github.io/github-colors/)
+# [lunatic-fox.github.io/github-colors/](https://lunatic-fox.github.io/github-colors/)
 ![](banner.png)
 
-## Click on each language to see its hexadecimal, rgb and hsl color.
+## Click on each box to see more info about the language selected.
+
+<div align="center">
+Made with ❤ by Josélio Júnior (Lunatic Fox) - 2022.
+</div>
