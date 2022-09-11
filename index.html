@@ -5,70 +5,38 @@
     <meta property="og:image:width" content="1280">
     <meta charset="UTF-8">
     <meta name="author" content="Josélio de S. C. Júnior">
-    <meta name="keywords" content="github, colors, language, hex, hexadecimal, rgb, hsl, cores, linguagem">
+    <meta name="keywords" content="github, colors, language, hex, hexadecimal, rgb, hsl, cores, linguagem, dados, data, markup, programming, programação, extensions, extensões">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <link id="theme" rel="stylesheet" href="css/theme-dark.css">
-    <title>Star Light</title>
+    <title>GitHub languages</title>
 </head>
 <body>
-
-    <!-- load screen -->
-    <section id="loading-screen" class="flex">
-        <div id="load-block"></div>
-        <div id="load">
-            <div id="load-lil-circle"></div>
-        </div>
-    </section>
-    <!-- load screen -->
-
-    <header>
-        <!-- logo -->
-        <div id="logo-wrapper">
-            <a href="https://joseliojunior.github.io/">
-                <img src="/img/pageLogo.png" id="logo">
-            </a>
-        </div>
-        <!-- logo -->
-
-        <!-- star theme button -->
-        <div id="star-theme-btn-wrapper" title="Theme selector">
-            <svg id="star-theme-btn" viewBox="0 0 11.377083 11.377083" >
-                <g transform="translate(-67.165 -164.87)">
-                    <path d="m78.145 170.56c0 0.51417-3.1886 1.376-3.5521 1.7395-0.36358 0.36357-1.2254 3.5521-1.7395 3.5521s-1.376-3.1886-1.7395-3.5521c-0.36358-0.36358-3.5521-1.2254-3.5521-1.7395 0-0.51418 3.1885-1.376 3.5521-1.7395 0.36358-0.36358 1.2254-3.5521 1.7395-3.5521s1.376 3.1886 1.7395 3.5521c0.36358 0.36357 3.5521 1.2254 3.5521 1.7395z" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
-                </g>
-            </svg> 
-        </div>
-        <!-- star theme button -->
-    </header>
-
-    <section id="decoration-bar"></section>
-
-    <section id="post-wrapper" class="flexblock">
-
-        <section id="date">
-            JUN / 08 / 2021 
-        </section>
-
-        <section id="title"></section>
-
-        <section id="description" style="margin-top: 10px; font-weight: 700; text-align: center;"></section>
-
-    </section>
-
-    <main id="content"></main>
-
-    <footer>
-        <div>Josélio Júnior - 2021</div>
-        <a href="https://github.com/joseliojunior">
-            <div>
-                Github <img height="16px" src="/img/githubIcon.png">
-            </div>
-        </a>
-    </footer>
-    
+  <section id="loading">
+    <div id="load-block"></div>
+    <div id="load">
+      <div id="load-lil-circle"></div>
+    </div>
+  </section>
+  <header>
+    <h1>GitHub languages</h1>
+    <h3>A collection of all type of languages know to GitHub</h3>
+  </header>
+  <section class="inf">
+    <h4 id="n-langs"></h4>
+    <h4 id="nc-langs"></h4>
+    <h4>
+      Source file from GitHub: <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank">languages.yml</a>
+    </h4>
+    <h4>
+      My GitHub: <a href="https://github.com/lunatic-fox" target="_blank">Lunatic Fox</a>
+    </h4>
+  </section>
+  <section id="lang-box"></section>
+  <footer>
+    <span>Josélio Júnior (Lunatic Fox) - </span><span id="year"></span>
+  </footer>
 </body>
 <script type="module" src="js/main.js"></script>
 </html>
