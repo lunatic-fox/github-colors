@@ -77,11 +77,28 @@ githubLanguages()
               </section>
               ${
                 v.color === 'none' && !v.extensions ?
-                 `<p id="xc-${i}" class="${cst.INT_INF}" style="margin: 0"></p>`
-                : `
+                  /*html*/ `<p id="xc-${i}" class="${cst.INT_INF}" style="margin: 0"></p>`
+                : /*html*/ `
                 <p id="xc-${i}" class="${cst.INT_INF}">
-                  ${v.color === 'none' ? '' : `<span> <b>color:</b> ${v.color} </span><br>`}
-                  ${v.extensions ? `<span> <b>extensions:</b>&nbsp; ${v.extensions}</span>` : ''}
+                  ${
+                    v.color !== 'none' ? /*html*/
+                    `
+                      <span><b>Colors</b></span><br>
+                      <span><b>-</b> ${v.color} </span><br>
+                      <span><b>-</b> ${Kolorz.hex(v.color).toRGB} </span><br>
+                      <span><b>-</b> ${Kolorz.hex(v.color).toHSL} </span><br>
+                    `
+                    : ''
+                  }
+                  ${
+                    v.extensions ? /*html*/
+                    `
+                      <br>
+                      <span><b>Extensions</b></span><br>
+                      <span>${v.extensions}</span>
+                    `
+                    : ''
+                  }
                 </p>`
               }
             </article>
