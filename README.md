@@ -1,5 +1,13 @@
-# [lunatic-fox.github.io/github-colors/](https://lunatic-fox.github.io/github-colors/)
+# Updated version: [lunaticfox.vercel.app/githubLanguages](http://lunaticfox.vercel.app/githubLanguages)
+
+<s>
+
+# lunatic-fox.github.io/github-colors/
+</s>
+
 ![](banner.png)
+
+
 
 ## Click on each box to see more info about the language selected.
 
